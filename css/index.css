@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
-*{
+/**{
   margin: 0;
   padding: 0;
 }
-
+*/
 .container{
   position: relative;
   min-height: 100vh;
@@ -37,6 +37,8 @@ body {
   background: #030c1c;
     overflow: hidden;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*LETRAS GRANDES*/
@@ -81,23 +83,25 @@ body {
     opacity: 0.80;
   }
 }
+
 @-webkit-keyframes blink {
-  40% {
-    opacity: 1;
-  }
-  42% {
-    opacity: 0.8;
-  }
-  43% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0.2;
-  }
-  46% {
-    opacity: 1;
-  }
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
 }
+
 @keyframes blink {
   40% {
     opacity: 1;
@@ -127,7 +131,7 @@ body {
   }
 }
 
-@media screen and (min-width: 750px) AND (max-width: 999px) {
+@media screen and (min-width: 701px) AND (max-width: 999px) {
   .main {
     width: 150px;
     font-size: 75px;
@@ -138,17 +142,22 @@ body {
   }
 }
 
-/*@media screen and (max-width: 749px) {
+@media screen and (max-width: 700px) {
   .main {
-    width: 100px;
-    font-size: 55px;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
  
   .main .socod {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
-*/
+
 
 /*BOTONES*/
 

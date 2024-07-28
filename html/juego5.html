@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verdad/Reto o Shot</title>
+    <link rel="stylesheet" type="text/css" href="../css/juego5.css">
+</head>
+<body>
+    <center>
+        <h1 class="titulo">¿QUIÉN ES MÁS PROBABLE...? 🍻 </h1>
+
+        <p class="subtitulo">
+            ¿Tus amigos tienen una buena perspectiva de ti 😇?  ¿O no 😈? 
+            <br><br>
+            ¡DEMUÉSTRALO!
+        </p>
+
+        <br><br>
+
+        <div class="rules">
+            <h2>INSTRUCCIONES</h2>
+            <p><strong>1 - </strong>Se lanzará una petición al azar.</p>
+            <p><strong>2 - </strong>Todos los participantes tendrán 14 segundos para analizar quién de este grupo es más probable que realize dicha petición.</p>
+            <p><strong>3 - </strong>Una vez finalizado el tiempo, todos los participantes apuntarán a dicha persona que pensaron.</p>
+            <p><strong>4 - </strong>El participante (o participantes) que más fue apuntado beberá 1 shot.</p>
+
+            <button id="start-button"><i class="fa-solid fa-play"></i> Empezar</button>
+        </div>
+
+    </center>
+
+    <video muted autoplay loop>
+        <source src="../img/fondo-space.mp4" type="video/mp4">
+    </video>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h3>¿Quién es más probable que...?</h3>
+            <p id="random-text"></p>
+            <div class="timer" id="timer">14</div>
+        </div>
+    </div>
+
+    <audio id="modal-audio" src="../img/timer.mp3"></audio>
+
+    <script type="text/javascript" src="../js/juego5.js"></script>
+    <script type="text/javascript" src="../librerias/fo.js"></script>
+</body>
+</html>
